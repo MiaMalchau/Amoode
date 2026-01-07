@@ -1,0 +1,504 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: garamond, serif;
+}
+
+body{
+    background-color: #e8dfd3;
+    margin: 0 0 5em 0; /*Resetting af margin i hele bodyen + tilføjer luft under kontaktformular*/
+
+}
+
+/*Header*/
+header{
+    background-color:#b6a089;
+    height: 100px;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo{
+    height: 120px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 2rem;
+    padding: 7px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 7px;
+}
+
+nav ul{
+    display: flex;
+    gap: 3px;
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    margin-right: 5.5rem;
+    margin-top: 10px;
+}
+
+.icons{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.logo1{
+    width: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover{
+    color: #e56606;
+}
+
+/* Banner */
+
+.banner-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+.banner{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 35rem;
+    object-fit: cover;
+    object-position: -20% 25%;
+}
+
+.banner-logo{
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translate(-50%, -50%);
+    width: 460px;
+}
+
+
+/*Produkt section*/
+
+.produkter{
+  background: transparent;
+  padding: 3.5rem 1rem;
+}
+
+.wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.produkt-titel{
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.6rem;
+  color: #000000;
+  font-weight: lighter;
+}
+
+/* grid: 3 kolonner */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem;
+  align-items: start;
+}
+
+/* kort */
+.billede{
+  background: transparent;
+}
+
+.billede-img{
+  width: 100%;
+  height: 28rem;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.billede-body{
+  padding: 0 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* titel og pris på samme række */
+.title-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+}
+
+.titel{
+  font-size: 1.4rem;
+  color: #25303a;
+  letter-spacing: .8px;
+  font-weight: lighter;
+}
+
+.pris{
+  font-weight: 700;
+  color: #333;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+/*kort tekst*/
+.ktop{
+  color: #000000;
+  font-size: .95rem;
+  margin-bottom: .8rem;
+}
+
+/* knapper og badges */
+.actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.størrelser{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.størrelse{
+  border: 1px solid #d9b89c;
+  background: transparent;
+  padding: .30rem .5rem;
+  border-radius: 20px;
+  font-size: .85rem;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 4px;
+}
+
+.størrelse:hover{
+  background: #ff8a1a;
+  color: #fff;
+  border-color: #ff8a1a;
+}
+
+.badge:hover{
+  background: #ff8a1a;
+  color: #fff;
+  border-color: #ff8a1a;
+}
+
+.btn{
+  background: #ff8a1a;
+  color: #000000;
+  padding: .60rem .9rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.btn:hover{
+  background: #e67e0d;
+  color: #ffffff;
+}
+
+
+
+.knap:hover{
+  background: #e67e0d; /* mørkere orange */
+  color: #ffffff;
+}
+
+/* link til alle styles */
+.allestyles-link{
+  display: inline-block;
+  margin-top: 1.2rem;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.allestyles-link:hover{
+  color: #e56606;
+}
+
+/* --- ABOUT / HVEM ER AMOODE? --- */
+.about{
+  background: #efe6dc; /* lys baggrund, kan justeres */
+  padding: 3.5rem 1rem;
+}
+.about-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-titel{
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.6rem;
+  color: #173144;
+  font-weight: lighter;
+}
+.about-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+.about-card{
+  background: transparent;
+}
+.about-img{
+  width: 100%;
+  height: 32rem;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
+.about-heading{
+  font-size: 1.6rem;
+  margin: 0 0 .4rem 0;
+  color: #173144;
+  font-weight: lighter;
+}
+.about-text{
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: .8rem;
+}
+.about-link{
+  color: #173144;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.about-link:hover{
+  color: #ff8a1a;
+}
+
+/* --- VALUES / FEATURES --- */
+.values{
+  background: #efe6dc;
+  padding: 3.5rem 1rem;
+}
+
+.values-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* grid: 3 kolonner */
+.values-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* hvert kort */
+.value-card{
+  background: transparent;
+}
+
+.value-img{
+  width: 100%;
+  height: 26rem;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.value-heading{
+  font-size: 1.6rem;
+  margin: 0 0 .4rem 0;
+  color: #173144;
+  letter-spacing: .8px;
+  font-weight: lighter;
+}
+
+.value-text{
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: .8rem;
+  font-size: .95rem;
+}
+
+.value-link{
+  color: #173144;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.value-link:hover{
+  color: #ff8a1a;
+}
+
+/* responsive: stack kolonner på small screens */
+@media (max-width: 900px){
+  .values-grid{ grid-template-columns: repeat(2, 1fr); }
+  .value-img{ height: 20rem; }
+}
+
+@media (max-width: 600px){
+  .values-grid{ grid-template-columns: 1fr; }
+  .value-img{ height: 18rem; }
+}
+
+/* --- FOOTER --- */
+footer{
+  background: #b8a89c;
+  padding: 3.5rem 1rem;
+}
+
+.footer-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* grid: 3 kolonner */
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+
+.footer-heading{
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: #1a2d38;
+  font-weight: 700;
+  font-weight: lighter;
+}
+
+.footer-text{
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: .95rem;
+}
+
+/* Newsletter form */
+.newsletter-form{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.email-input{
+  padding: .7rem;
+  border: none;
+  border-radius: 4px;
+  font-size: .95rem;
+}
+
+.email-input::placeholder{
+  color: #999;
+}
+
+.newsletter-btn{
+  background: #ff8a1a;
+  color: #fff;
+  padding: .7rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: .5px;
+}
+
+.newsletter-btn:hover{
+  background: #e67e0d;
+}
+
+/* Links */
+.footer-links{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.2rem;
+}
+
+.footer-links li{
+  margin-bottom: .5rem;
+}
+
+.footer-links a{
+  color: #333;
+  text-decoration: underline;
+  font-weight: 600;
+  font-weight: lighter;
+}
+
+.footer-links a:hover{
+  color: #d76800d5;
+}
+
+/* SoMe-ikoner */
+.social-icons{
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 50%;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.social-link:hover{
+  background: #ff8a1a;
+  border-color: #ff8a1a;
+  color: #fff;
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .footer-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px){
+  .footer-grid{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px){
+  .about-grid{ grid-template-columns: 1fr; }
+  .about-img{ height: 22rem; }
+  .about-title{ font-size: 2rem; }
+}
